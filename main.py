@@ -7,7 +7,7 @@
 from flask import Flask, render_template # estruturas para criar o site
 from flask_socketio import SocketIO, send # estruturas para criar o chat
 
-app = Flask(__name__) # cria o site
+app = Flask(__name__, template_folder='templates') # cria o site
 app.config["SECRET"] = "ajuiahfa78fh9f78shfs768fgs7f6" # chave de seguranca, pode ser qualquer coisa, mas escolha algo dificil
 app.config["DEBUG"] = True # para testarmos o código, no final tiramos
 socketio = SocketIO(app, cors_allowed_origins="*") # cria a conexão entre diferentes máquinas que estão no mesmo site
