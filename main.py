@@ -19,7 +19,7 @@ def gerenciar_mensagens(mensagem):
 
 @app.route("/") # cria a página do site
 def home():
-    return render_template("index.html") # essa página vai carregar esse arquivo html que está aqui
+    return render_template("index.html") # essa página vai carregar esse arquivo html que está aqu
 
 if __name__ == "__main__":
     socketio.run(app, host='localhost') # define que o app vai rodar no seu servidor local, ou seja, na internet em que o seu computador tá conectado
